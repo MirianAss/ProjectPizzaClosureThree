@@ -14,6 +14,7 @@
 		3A78F8F429CE626800C02C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A78F8F229CE626800C02C43 /* Main.storyboard */; };
 		3A78F8F629CE626900C02C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A78F8F529CE626900C02C43 /* Assets.xcassets */; };
 		3A78F8F929CE626900C02C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A78F8F729CE626900C02C43 /* LaunchScreen.storyboard */; };
+		3A78F90129CE676000C02C43 /* TableViewPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F90029CE676000C02C43 /* TableViewPizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3A78F8F529CE626900C02C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A78F8F829CE626900C02C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A78F8FA29CE626900C02C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A78F90029CE676000C02C43 /* TableViewPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPizzaViewController.swift; sourceTree = "<group>"; };
 		50CD90D02564F7DA38FF58E3 /* Pods-ProjectPizzaClosureThree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPizzaClosureThree.release.xcconfig"; path = "Target Support Files/Pods-ProjectPizzaClosureThree/Pods-ProjectPizzaClosureThree.release.xcconfig"; sourceTree = "<group>"; };
 		A8EE6357D89792E9F5A44264 /* Pods-ProjectPizzaClosureThree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPizzaClosureThree.debug.xcconfig"; path = "Target Support Files/Pods-ProjectPizzaClosureThree/Pods-ProjectPizzaClosureThree.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				A8EE6357D89792E9F5A44264 /* Pods-ProjectPizzaClosureThree.debug.xcconfig */,
 				50CD90D02564F7DA38FF58E3 /* Pods-ProjectPizzaClosureThree.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				3A78F8EE29CE626800C02C43 /* SceneDelegate.swift */,
 				3A78F8F029CE626800C02C43 /* ViewController.swift */,
 				3A78F8F229CE626800C02C43 /* Main.storyboard */,
+				3A78F90029CE676000C02C43 /* TableViewPizzaViewController.swift */,
 				3A78F8F529CE626900C02C43 /* Assets.xcassets */,
 				3A78F8F729CE626900C02C43 /* LaunchScreen.storyboard */,
 				3A78F8FA29CE626900C02C43 /* Info.plist */,
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A78F8F129CE626800C02C43 /* ViewController.swift in Sources */,
+				3A78F90129CE676000C02C43 /* TableViewPizzaViewController.swift in Sources */,
 				3A78F8ED29CE626800C02C43 /* AppDelegate.swift in Sources */,
 				3A78F8EF29CE626800C02C43 /* SceneDelegate.swift in Sources */,
 			);
