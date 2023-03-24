@@ -43,7 +43,7 @@
         <!--Table View Pizza View Controller-->
         <scene sceneID="7Dx-sQ-Ica">
             <objects>
-                <viewController id="Rv7-0C-jt0" customClass="TableViewPizzaViewController" customModule="ProjectPizzaClosureThree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rv7-0C-jt0" customClass="TableViewPizzaViewController" customModule="ProjectPizzaClosureThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eAK-hP-fCy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

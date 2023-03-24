@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btStart(_ sender: Any) {
-        
+        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "tableView") {
+            
+            self.present(screen, animated: true)
+        }
     }
     
 }
