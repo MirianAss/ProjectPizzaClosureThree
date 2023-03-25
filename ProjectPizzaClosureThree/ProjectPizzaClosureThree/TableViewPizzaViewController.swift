@@ -17,6 +17,7 @@ class TableViewPizzaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "PizzaTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
@@ -42,4 +43,14 @@ extension TableViewPizzaViewController: UITableViewDataSource {
         return UITableViewCell()
     }
    
+}
+extension TableViewPizzaViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "descriptionPizza") as? DescriptionPizzaViewController {
+            
+            screen.descriptionPizza = self.arrayPizza?[indexPath.row]
+            
+            self.present(screen, animated: true)
+        }
+    }
 }

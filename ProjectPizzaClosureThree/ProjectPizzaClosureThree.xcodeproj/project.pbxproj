@@ -19,6 +19,8 @@
 		3A78F90529CE67DF00C02C43 /* PizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A78F90329CE67DF00C02C43 /* PizzaTableViewCell.xib */; };
 		3A78F90729CE6A2F00C02C43 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F90629CE6A2F00C02C43 /* Pizza.swift */; };
 		3A78F90929CE6C0700C02C43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F90829CE6C0700C02C43 /* Request.swift */; };
+		3A78F90B29CE708000C02C43 /* DescriptionPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F90A29CE708000C02C43 /* DescriptionPizzaViewController.swift */; };
+		3A78F90D29CE7F1600C02C43 /* RatingPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F90C29CE7F1600C02C43 /* RatingPizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		3A78F90329CE67DF00C02C43 /* PizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTableViewCell.xib; sourceTree = "<group>"; };
 		3A78F90629CE6A2F00C02C43 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		3A78F90829CE6C0700C02C43 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3A78F90A29CE708000C02C43 /* DescriptionPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPizzaViewController.swift; sourceTree = "<group>"; };
+		3A78F90C29CE7F1600C02C43 /* RatingPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingPizzaViewController.swift; sourceTree = "<group>"; };
 		50CD90D02564F7DA38FF58E3 /* Pods-ProjectPizzaClosureThree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPizzaClosureThree.release.xcconfig"; path = "Target Support Files/Pods-ProjectPizzaClosureThree/Pods-ProjectPizzaClosureThree.release.xcconfig"; sourceTree = "<group>"; };
 		A8EE6357D89792E9F5A44264 /* Pods-ProjectPizzaClosureThree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPizzaClosureThree.debug.xcconfig"; path = "Target Support Files/Pods-ProjectPizzaClosureThree/Pods-ProjectPizzaClosureThree.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 				3A78F90329CE67DF00C02C43 /* PizzaTableViewCell.xib */,
 				3A78F8F029CE626800C02C43 /* ViewController.swift */,
 				3A78F90029CE676000C02C43 /* TableViewPizzaViewController.swift */,
+				3A78F90A29CE708000C02C43 /* DescriptionPizzaViewController.swift */,
+				3A78F90C29CE7F1600C02C43 /* RatingPizzaViewController.swift */,
 				3A78F8F529CE626900C02C43 /* Assets.xcassets */,
 				3A78F8F729CE626900C02C43 /* LaunchScreen.storyboard */,
 				3A78F8FA29CE626900C02C43 /* Info.plist */,
@@ -222,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A78F90B29CE708000C02C43 /* DescriptionPizzaViewController.swift in Sources */,
 				3A78F8F129CE626800C02C43 /* ViewController.swift in Sources */,
 				3A78F90129CE676000C02C43 /* TableViewPizzaViewController.swift in Sources */,
 				3A78F90729CE6A2F00C02C43 /* Pizza.swift in Sources */,
@@ -229,6 +236,7 @@
 				3A78F90929CE6C0700C02C43 /* Request.swift in Sources */,
 				3A78F90429CE67DF00C02C43 /* PizzaTableViewCell.swift in Sources */,
 				3A78F8EF29CE626800C02C43 /* SceneDelegate.swift in Sources */,
+				3A78F90D29CE7F1600C02C43 /* RatingPizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
