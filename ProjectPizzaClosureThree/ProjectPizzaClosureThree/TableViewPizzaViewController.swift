@@ -11,22 +11,44 @@ class TableViewPizzaViewController: UIViewController {
     
     var arrayPizza: Pizza?
     let request = Request()
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupTableView()
+        myRequest()
+        
+    }
+    
+    func setupTableView() {
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "PizzaTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
-        request.resquestPizza { arrayDePizza in
-            self.arrayPizza = arrayDePizza
-            self.tableView.reloadData()
-        }
+        tableView.register(UINib(nibName: "PizzaTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
-
+    
+    func myRequest() {
+        
+        request.delegate = self
+        request.resquestPizza { arrayDePizza in
+            
+        }
+        
+    }
+}
+extension TableViewPizzaViewController: RequestDelegate {
+    func finishRequest(arrayDePizza: Pizza?) {
+        self.arrayPizza = arrayDePizza
+        self.tableView.reloadData()
+    }
+    
+    func finishRequest() {
+        
+    }
+    
 }
 extension TableViewPizzaViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +64,7 @@ extension TableViewPizzaViewController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
-   
+    
 }
 extension TableViewPizzaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

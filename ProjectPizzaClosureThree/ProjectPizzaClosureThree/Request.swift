@@ -8,7 +8,16 @@
 import UIKit
 import Alamofire
 
+protocol RequestDelegate: NSObject{
+    
+    func finishRequest(arrayDePizza: Pizza?)
+}
+
 class Request: NSObject {
+    
+    var arrayPizza: Pizza?
+    
+    weak var delegate: RequestDelegate?
     
     func resquestPizza(completion: @escaping (Pizza?) -> Void) {
         
@@ -16,7 +25,9 @@ class Request: NSObject {
             
             let pizza = try? JSONDecoder().decode(Pizza.self, from: response.data ?? Data())
             
+            self.arrayPizza = pizza
             completion(pizza)
+            self.delegate?.finishRequest(arrayDePizza: pizza)
 
         }
     }
